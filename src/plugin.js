@@ -5,6 +5,7 @@ import { assign, getPath, warn, isCallable, detectPassiveSupport } from './utils
 import Validator from './core/validator';
 import ErrorBag from './core/errorBag';
 import mapFields from './core/mapFields';
+import { ValidationProvider } from './components';
 import I18nDictionary from './core/localization/i18n';
 
 // @flow
@@ -158,5 +159,6 @@ VeeValidate.directive = directive;
 VeeValidate.Validator = Validator;
 VeeValidate.ErrorBag = ErrorBag;
 VeeValidate.mapFields = mapFields;
+VeeValidate.ValidationProvider = ValidationProvider;
 
 export default VeeValidate;
